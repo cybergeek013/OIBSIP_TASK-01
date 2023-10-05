@@ -1,0 +1,81 @@
+body {
+  background: url("./images/bgImage.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #0e0e0e;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+}
+
+.display {
+  grid-column: 1 / span 4;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #555;
+  color: white;
+  text-align: right;
+  padding: 5px 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  background-color: #444;
+  box-shadow: 3px 3px 5px 0px rgb(29, 29, 29);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+button:active {
+  background-color: #222;
+}
+
+.operate {
+  background-color: #777;
+}
+
+.doClear {
+  background-color: brown;
+}
+
+.equals {
+  grid-column: span 1;
+  background-color: chocolate;
+}
+
+.operate:hover {
+  background-color: #222;
+}
+
+.doClear:hover {
+  background-color: rgb(109, 39, 39);
+}
+
+.equals:hover {
+  background-color: rgb(155, 83, 32);
+}
